@@ -96,19 +96,16 @@ class ScrollingOptionsView: UIView {
             label.text = self.input![i]
             self.scrollView.addSubview(label)
         }
-        scrollView.contentOffset = CGPoint(x: scrollView.frame.width, y: 0)
-        let index = Int(scrollView.contentOffset.x / scrollView.frame.width) - 1
-//        index = index < datasource!.count - 1 ? index : 0
+        let index = datasource?.index(of: "option two") ?? 0
+        scrollView.contentOffset = CGPoint(x: (scrollView.frame.width * CGFloat(index + 1)), y: 0)
         self.selectedOption = datasource![index]
     }
     
     @objc
     func didReceiveTap(sender: UITapGestureRecognizer) {
-        print("RECEIVED TAP!")
         
         var index = Int(scrollView.contentOffset.x / scrollView.frame.width)
         index = index < datasource!.count ? index : 0
-        print("INDEX IS \(index)")
         self.selectedOption = datasource![index]
  
         let x = scrollView.contentOffset.x
@@ -132,9 +129,4 @@ extension ScrollingOptionsView: UIScrollViewDelegate {
             self.scrollView.contentOffset = CGPoint(x: scrollView.frame.size.width * CGFloat(self.input!.count - 2), y: 0)
         }
     }
-    
-//    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-
-//    }
-
 }
