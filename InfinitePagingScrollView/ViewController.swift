@@ -10,34 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var scrollOptionsView: ScrollingOptionsView!
+    var infiniteScrollView = InfiniteScrollView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
-        setupSubviews()
     }
     
-    func setupSubviews() {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        infiniteScrollView.removeFromSuperview()
         
-        self.scrollOptionsView = ScrollingOptionsView(frame: CGRect(x: 0, y: 300, width: self.view.bounds.width, height: 40))
-        self.scrollOptionsView.delegate = self
-        self.scrollOptionsView.datasource = ["option one", "option two", "option three", "option four"]
+        self.infiniteScrollView = InfiniteScrollView(frame: CGRect(x: 0, y: 300, width: self.view.bounds.width, height: 40))
         
-        view.addSubview(scrollOptionsView)
+        view.addSubview(infiniteScrollView)
+        
+        self.infiniteScrollView.delegate = self
+        self.infiniteScrollView.datasource = ["option one", "option two", "option three", "option four"]
+
     }
+    
 }
 
-extension ViewController: ScrollingOptionsViewDelegate {
+extension ViewController: InfiniteScrollViewDelegate {
+
     func optionChanged(to option: String) {
-        
-        print("delegate called")
-    
+        print("delegate called with option: \(option)")
     }
-    
-    
-    
-    
+
 }
 

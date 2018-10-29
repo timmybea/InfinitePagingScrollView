@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0A402F52182534300094E86 /* InfiniteScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A402F42182534300094E86 /* InfiniteScrollingView.swift */; };
 		B0CB2D6E1FE70B1B009618C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB2D6D1FE70B1B009618C5 /* AppDelegate.swift */; };
 		B0CB2D701FE70B1B009618C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB2D6F1FE70B1B009618C5 /* ViewController.swift */; };
 		B0CB2D731FE70B1B009618C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CB2D711FE70B1B009618C5 /* Main.storyboard */; };
 		B0CB2D751FE70B1B009618C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0CB2D741FE70B1B009618C5 /* Assets.xcassets */; };
 		B0CB2D781FE70B1B009618C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CB2D761FE70B1B009618C5 /* LaunchScreen.storyboard */; };
-		B0CB2D801FE71CD8009618C5 /* ScrollingOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB2D7F1FE71CD8009618C5 /* ScrollingOptionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0A402F42182534300094E86 /* InfiniteScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollingView.swift; sourceTree = "<group>"; };
 		B0CB2D6A1FE70B1B009618C5 /* InfinitePagingScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfinitePagingScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CB2D6D1FE70B1B009618C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0CB2D6F1FE70B1B009618C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		B0CB2D741FE70B1B009618C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0CB2D771FE70B1B009618C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0CB2D791FE70B1B009618C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0CB2D7F1FE71CD8009618C5 /* ScrollingOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingOptionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				B0CB2D741FE70B1B009618C5 /* Assets.xcassets */,
 				B0CB2D761FE70B1B009618C5 /* LaunchScreen.storyboard */,
 				B0CB2D791FE70B1B009618C5 /* Info.plist */,
-				B0CB2D7F1FE71CD8009618C5 /* ScrollingOptionsView.swift */,
+				B0A402F42182534300094E86 /* InfiniteScrollingView.swift */,
 			);
 			path = InfinitePagingScrollView;
 			sourceTree = "<group>";
@@ -139,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A402F52182534300094E86 /* InfiniteScrollingView.swift in Sources */,
 				B0CB2D701FE70B1B009618C5 /* ViewController.swift in Sources */,
-				B0CB2D801FE71CD8009618C5 /* ScrollingOptionsView.swift in Sources */,
 				B0CB2D6E1FE70B1B009618C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InfinitePagingScrollView/ScrollingOptionsView.swift"
-            timestampString = "535245487.690678"
+            timestampString = "562189017.051854"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "didReceiveTap(sender:)"
             landmarkType = "7">
          </BreakpointContent>
